@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker Dashboard</title>
+    <meta name="description" content="" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+      .font-family-karla {
+        font-family: karla;
+      }
+      .bg-sidebar {
+        background: #3d68ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-family-karla flex">
+    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+      <nav class="text-white text-base font-semibold pt-3">
+        <a
+          href="dashboard.html"
+          class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
+        >
+          Dashboard
+        </a>
+      </nav>
+    </aside>
+
+    <div class="w-full flex flex-col h-screen overflow-y-hidden">
+
+      <div class="w-full overflow-x-hidden border-t flex flex-col">
+        <h1 class="text-3xl text-black pb-6">Dashboard</h1>
+
+        <div class="p-6 bg-gray-100 min-h-screen">
+          <div class="grid grid-cols-4 gap-4 mb-6">
+            <div
+              class="bg-blue-500 p-5 rounded-lg text-white flex flex-col justify-between"
+            >
+              <p class="font-semibold">Steps</p>
+              <p class="text-3xl">2,500 Steps</p>
+              <div class="relative">
+                <div class="w-full h-2 bg-white rounded-full">
+                  <div class="h-2 bg-teal-700" style="width: 50%"></div>
+                </div>
+              </div>
+              <span>of your goals</span>
+            </div>
+            <div
+              class="bg-green-500 p-5 rounded-lg text-white flex flex-col justify-between"
+            >
+              <p class="font-semibold">Water</p>
+              <div
+                class="border-8 border-white rounded-full w-24 h-24 mx-auto flex justify-center items-center"
+              >
+                <span class="text-xl text-center">1.25 Liters</span>
+              </div>
+            </div>
+            <div
+              class="bg-red-500 p-5 rounded-lg text-white flex flex-col justify-between"
+            >
+              <p class="font-semibold">Calories</p>
+              <div class="w-28 mx-auto">
+                <img src="public/image/Frame 12.png" alt="Calories" />
+              </div>
+            </div>
+            <div
+              class="bg-purple-500 p-5 rounded-lg text-white flex flex-col justify-between"
+            >
+              <p class="font-semibold">Heart Rate</p>
+              <div class="w-40 mx-auto">
+                <img src="public/image/Vector.png" alt="Heart Rate" />
+              </div>
+              <span>110 Bpm</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-xl font-semibold mb-4">Activity Overview</h2>
+              <table class="min-w-full">
+                <thead>
+                  <tr class="bg-gray-200">
+                    <th class="py-2 px-4 text-left">Day</th>
+                    <th class="py-2 px-4 text-left">Steps</th>
+                    <th class="py-2 px-4 text-left">Calories Burned</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Mon</td>
+                    <td class="py-2 px-4">2,000</td>
+                    <td class="py-2 px-4">300</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Tue</td>
+                    <td class="py-2 px-4">2,500</td>
+                    <td class="py-2 px-4">350</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Wed</td>
+                    <td class="py-2 px-4">3,000</td>
+                    <td class="py-2 px-4">400</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Thu</td>
+                    <td class="py-2 px-4">2,200</td>
+                    <td class="py-2 px-4">320</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Fri</td>
+                    <td class="py-2 px-4">2,500</td>
+                    <td class="py-2 px-4">370</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Sat</td>
+                    <td class="py-2 px-4">3,500</td>
+                    <td class="py-2 px-4">480</td>
+                  </tr>
+                  <tr class="hover:bg-gray-100">
+                    <td class="py-2 px-4">Sun</td>
+                    <td class="py-2 px-4">1,800</td>
+                    <td class="py-2 px-4">290</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-xl font-semibold mb-4">Progress Overview</h2>
+              <div class="flex flex-col">
+                <div class="flex justify-between py-2 border-b">
+                  <span>Stretching</span>
+                  <span>40 hrs</span>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                  <span>Cardio</span>
+                  <span>30 hrs</span>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                  <span>Strength</span>
+                  <span>20 hrs</span>
+                </div>
+                <div class="flex justify-between py-2 border-b">
+                  <span>Treadmill</span>
+                  <span>30 hrs</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-6">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-xl font-semibold mb-4">Recommended Trainers</h2>
+              <div class="flex flex-col gap-4">
+                <div class="flex items-center bg-gray-100 p-3 rounded-lg">
+                  <img
+                    src="public/image/body2.png"
+                    alt="Trainer"
+                    class="w-24 h-24 rounded-full mr-3 object-cover"
+                  />
+                  <div>
+                    <p class="font-semibold">Cameron Williamson</p>
+                    <p>Fitness Specialist</p>
+                    <a href="#" class="text-blue-500">View Profile</a>
+                  </div>
+                </div>
+                <div class="flex items-center bg-gray-100 p-3 rounded-lg">
+                  <img
+                    src="public/image/body.png"
+                    alt="Trainer"
+                    class="w-24 h-24 rounded-full mr-3 object-cover"
+                  />
+                  <div>
+                    <p class="font-semibold">Cameron Williamson</p>
+                    <p>Fitness Specialist</p>
+                    <a href="#" class="text-blue-500">View Profile</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-xl font-semibold mb-4">Featured Diet Menu</h2>
+              <div class="flex flex-col">
+                <div class="flex justify-between p-2 border-b">
+                  <span>Avocado Salad</span>
+                  <span>10:00 am</span>
+                </div>
+                <div class="flex justify-between p-2 border-b">
+                  <span>Blueberry</span>
+                  <span>10:00 am</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AlpineJS -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ChartJS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
+</html>
