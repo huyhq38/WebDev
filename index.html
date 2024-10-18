@@ -11,10 +11,6 @@
       rel="stylesheet"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
-      .font-family-karla {
-        font-family: karla;
-      }
       .bg-sidebar {
         background: #3d68ff;
       }
@@ -24,11 +20,29 @@
     <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
       <nav class="text-white text-base font-semibold pt-3">
         <a
-          href="dashboard.html"
+          href="index.html"
           class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
         >
           Dashboard
         </a>
+        <a
+          href="nutrition.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Nutrition
+        </a>
+        <a
+          href="progress.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Progress
+        </a>
+        <a
+        href="premium.html"
+        class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+      >
+        Premium
+      </a>
       </nav>
     </aside>
 
@@ -165,9 +179,9 @@
                     class="w-24 h-24 rounded-full mr-3 object-cover"
                   />
                   <div>
-                    <p class="font-semibold">Cameron Williamson</p>
+                    <p class="font-semibold">Barack Obama</p>
                     <p>Fitness Specialist</p>
-                    <a href="#" class="text-blue-500">View Profile</a>
+                    <a href="/profile-obama.html" class="text-blue-500">View Profile</a>
                   </div>
                 </div>
                 <div class="flex items-center bg-gray-100 p-3 rounded-lg">
@@ -177,9 +191,9 @@
                     class="w-24 h-24 rounded-full mr-3 object-cover"
                   />
                   <div>
-                    <p class="font-semibold">Cameron Williamson</p>
+                    <p class="font-semibold">Donald Trump</p>
                     <p>Fitness Specialist</p>
-                    <a href="#" class="text-blue-500">View Profile</a>
+                    <a href="/profile-trump.html" class="text-blue-500">View Profile</a>
                   </div>
                 </div>
               </div>
@@ -202,24 +216,6 @@
         </div>
       </div>
     </div>
-
-    <!-- AlpineJS -->
-    <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script>
-    <!-- Font Awesome -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
-      crossorigin="anonymous"
-    ></script>
-    <!-- ChartJS -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
-      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
-      crossorigin="anonymous"
-    ></script>
 
 
   </body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker Dashboard</title>
+    <meta name="description" content="" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-sidebar {
+        background: #3d68ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-family-karla flex">
+    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+      <nav class="text-white text-base font-semibold pt-3">
+        <a
+          href="index.html"
+          class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
+        >
+          Dashboard
+        </a>
+        <a
+          href="nutrition.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Nutrition
+        </a>
+        <a
+          href="progress.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Progress
+        </a>
+        <a
+        href="premium.html"
+        class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+      >
+        Premium
+      </a>
+      </nav>
+    </aside>
+
+    <div class="container mx-auto mt-10">
+        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="bg-cover bg-center h-56" style="background-image: url('/public/image/trainer.jpeg');"></div>
+          <div class="p-6">
+            <div class="text-center">
+              <img class="w-24 h-24 rounded-full mx-auto border-4 border-white -mt-12" src="/public/image/trainer.jpeg" alt="Trainer Avatar">
+              <h1 class="text-xl font-semibold text-gray-700 mt-2">Barack Obama</h1>
+              <p class="text-gray-600">Certified Fitness Trainer</p>
+            </div>
+            <div class="mt-4">
+              <h2 class="text-lg font-semibold text-gray-700">Personal Information</h2>
+              <ul class="text-gray-600 mt-2">
+                <li><strong>Age:</strong> 30</li>
+                <li><strong>Gender:</strong> Male</li>
+                <li><strong>Weight:</strong> 80kg</li>
+                <li><strong>Height:</strong> 180cm</li>
+                <li><strong>Experience:</strong> 5 years</li>
+              </ul>
+            </div>
+    
+            <div class="mt-4">
+              <h2 class="text-lg font-semibold text-gray-700">Skills</h2>
+              <ul class="text-gray-600 mt-2">
+                <li>- Strength Training</li>
+                <li>- Cardio Workouts</li>
+                <li>- Nutrition Coaching</li>
+                <li>- Weight Loss Programs</li>
+                <li>- Flexibility Training</li>
+              </ul>
+            </div>
+    
+            <div class="mt-6 text-center">
+              <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+  </body>
+</html>

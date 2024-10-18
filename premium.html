@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker Dashboard</title>
+    <meta name="description" content="" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-sidebar {
+        background: #3d68ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-family-karla flex">
+    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+      <nav class="text-white text-base font-semibold pt-3">
+        <a
+          href="index.html"
+          class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
+        >
+          Dashboard
+        </a>
+        <a
+          href="nutrition.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Nutrition
+        </a>
+        <a
+          href="progress.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Progress
+        </a>
+        <a
+          href="premium.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Premium
+        </a>
+      </nav>
+    </aside>
+
+    <div class="w-full flex flex-col h-screen overflow-y-hidden">
+        <div class="px-3 container mx-auto mt-10">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">VIP Packages</h1>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600">Basic VIP</h2>
+                <p class="text-gray-700 mt-2">Perfect for beginners looking to stay active.</p>
+                <div class="mt-4">
+                  <span class="text-3xl font-bold text-gray-900">$9.99</span>
+                  <span class="text-gray-500 text-sm">/ month</span>
+                </div>
+                <ul class="mt-4 text-gray-600">
+                  <li>- Access to all basic workouts</li>
+                  <li>- Weekly fitness tips</li>
+                  <li>- Limited progress tracking</li>
+                </ul>
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600">Choose Basic VIP</button>
+              </div>
+        
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600">Premium VIP</h2>
+                <p class="text-gray-700 mt-2">For regular users wanting more features.</p>
+                <div class="mt-4">
+                  <span class="text-3xl font-bold text-gray-900">$19.99</span>
+                  <span class="text-gray-500 text-sm">/ month</span>
+                </div>
+                <ul class="mt-4 text-gray-600">
+                  <li>- Everything in Basic VIP</li>
+                  <li>- Personalized workout plans</li>
+                  <li>- Full progress tracking</li>
+                  <li>- Access to nutrition plans</li>
+                </ul>
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600">Choose Premium VIP</button>
+              </div>
+        
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <h2 class="text-2xl font-semibold text-blue-600">Elite VIP</h2>
+                <p class="text-gray-700 mt-2">Best for those committed to achieving peak fitness.</p>
+                <div class="mt-4">
+                  <span class="text-3xl font-bold text-gray-900">$29.99</span>
+                  <span class="text-gray-500 text-sm">/ month</span>
+                </div>
+                <ul class="mt-4 text-gray-600">
+                  <li>- Everything in Premium VIP</li>
+                  <li>- 1-on-1 fitness coaching</li>
+                  <li>- VIP customer support</li>
+                  <li>- Exclusive access to live events</li>
+                </ul>
+                <button class="mt-6 w-full bg-blue-500 text-white py-2 rounded-full hover:bg-blue-600">Choose Elite VIP</button>
+              </div>
+        
+            </div>
+          </div>
+      
+    </div>
+
+
+  </body>
+</html>

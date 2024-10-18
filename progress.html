@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker Dashboard</title>
+    <meta name="description" content="" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-sidebar {
+        background: #3d68ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-family-karla flex">
+    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+        <nav class="text-white text-base font-semibold pt-3">
+          <a
+            href="index.html"
+            class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          >
+            Dashboard
+          </a>
+          <a
+            href="nutrition.html"
+            class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+          >
+            Nutrition
+          </a>
+          <a
+            href="progress.html"
+            class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
+          >
+            Progress
+          </a>
+          <a
+          href="premium.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Premium
+        </a>
+        </nav>
+      </aside>
+
+    <div class="relative w-full flex flex-col h-screen overflow-y-hidden">
+
+      <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
+        <main class="w-full flex-grow p-6">
+          <h1 class="text-3xl text-black pb-6">Progress</h1>
+
+          <div class="min-h-screen bg-gray-800 text-white p-8">
+            <div class="mb-8">
+              <h1 class="text-2xl font-semibold">Dashboard Overview</h1>
+              <div class="bg-gray-700 rounded-lg p-4">
+                <img
+                  src="/public/image/chart1.jpg"
+                  alt="Chart"
+                  class="w-full object-container rounded-lg"
+                  style="height: 700px"
+                />
+                <div class="flex justify-end mt-2">
+                  <span class="text-yellow-400 mr-4">Total Vol</span>
+                  <span class="text-blue-400">Total Weight</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4 mb-8">
+              <div class="bg-gray-700 p-4 rounded-lg text-center">
+                <h2 class="text-3xl font-bold">500</h2>
+                <p>Exercises</p>
+                <p class="text-green-400 mt-2">▲ 2%</p>
+              </div>
+              <div class="bg-gray-700 p-4 rounded-lg text-center">
+                <h2 class="text-3xl font-bold">1200</h2>
+                <p>Calories Burned</p>
+                <p class="text-red-400 mt-2">▼ 6%</p>
+              </div>
+              <div class="bg-gray-700 p-4 rounded-lg text-center">
+                <h2 class="text-3xl font-bold">65</h2>
+                <p>Records Broken</p>
+                <p class="text-green-400 mt-2">▲ 45%</p>
+              </div>
+              <div class="bg-gray-700 p-4 rounded-lg text-center">
+                <h2 class="text-3xl font-bold">800k</h2>
+                <p>Weight Lifted</p>
+                <p class="text-green-400 mt-2">▲ 25%</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-700 p-6 rounded-lg">
+                <h2 class="text-lg font-semibold mb-4">
+                  Benchmarks (As of 14/10/24)
+                </h2>
+                <div class="mb-4">
+                  <p class="mb-2">Barbell Bench Press</p>
+                  <div class="w-full bg-gray-600 rounded-lg h-4">
+                    <div
+                      class="bg-green-400 h-4 rounded-lg"
+                      style="width: 50%"
+                    ></div>
+                  </div>
+                  <p class="mt-1 text-right">225lbs</p>
+                </div>
+                <div class="mb-4">
+                  <p class="mb-2">Barbell Deadlift</p>
+                  <div class="w-full bg-gray-600 rounded-lg h-4">
+                    <div
+                      class="bg-green-400 h-4 rounded-lg"
+                      style="width: 85%"
+                    ></div>
+                  </div>
+                  <p class="mt-1 text-right">425lbs</p>
+                </div>
+                <div>
+                  <p class="mb-2">Barbell Back Squat</p>
+                  <div class="w-full bg-gray-600 rounded-lg h-4">
+                    <div
+                      class="bg-green-400 h-4 rounded-lg"
+                      style="width: 60%"
+                    ></div>
+                  </div>
+                  <p class="mt-1 text-right">300lbs</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-700 p-6 rounded-lg">
+                <h2 class="text-lg font-semibold mb-4">Muscle Groups</h2>
+                <img
+                  src="/public/image/cach-phoi-mau-ve-co-ban.jpg"
+                  alt="Muscle Groups"
+                  class="w-auto h-64 object-container"
+                />
+                <div class="grid grid-cols-2 mt-4">
+                  <p class="text-yellow-400">Chest (25%)</p>
+                  <p class="text-blue-400">Back (25%)</p>
+                  <p class="text-pink-400">Biceps (25%)</p>
+                  <p class="text-green-400">Triceps (25%)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+  
+  </body>
+</html>

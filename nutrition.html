@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker Dashboard</title>
+    <meta name="description" content="" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-sidebar {
+        background: #3d68ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-family-karla flex">
+    <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
+      <nav class="text-white text-base font-semibold pt-3">
+        <a
+          href="index.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Dashboard
+        </a>
+        <a
+          href="nutrition.html"
+          class="flex items-center active-nav-link text-white py-4 pl-6 nav-item"
+        >
+          Nutrition
+        </a>
+        <a
+          href="progress.html"
+          class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+        >
+          Progress
+        </a>
+        <a
+        href="premium.html"
+        class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item"
+      >
+        Premium
+      </a>
+      </nav>
+    </aside>
+
+    <div class="relative w-full flex flex-col h-screen overflow-y-hidden">
+
+      <div class="w-full h-screen overflow-x-hidden border-t flex flex-col">
+        <main class="w-full flex-grow p-6">
+          <h1 class="text-3xl text-black pb-6">Nutrition</h1>
+          <div class="bg-gray-100 font-sans w-full">
+            <div class="p-4">
+              <div class="flex justify-between items-center mb-6">
+                <div>
+                  <p class="text-gray-500">
+                    Let's start living healthy from now on
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-8">
+                  <div class="bg-white p-6 rounded-lg shadow mb-6">
+                    <div class="flex justify-between items-center">
+                      <h2 class="text-lg font-semibold">Calories</h2>
+                      <button class="text-gray-500">Weekly</button>
+                    </div>
+                    <div class="mt-4">
+                      <img
+                        src="/public/image/chart.png"
+                        alt="Calories Chart"
+                        class="w-full object-cover"
+                        style="height: 600px"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 class="text-lg font-semibold mb-4">Meals today</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <img
+                          src="/public/image/carot.jpg"
+                          alt="Carrot Juice"
+                          class="mb-2 w-full object-container"
+                          style="height: 300px"
+                        />
+                        <p>Carrot juice</p>
+                        <p class="text-sm text-gray-500">
+                          41 kcal | 100g | 10g
+                        </p>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <img
+                          src="/public/image/porata.jpg"
+                          alt="Mashed Potato"
+                          class="mb-2 w-full object-container"
+                          style="height: 300px"
+                        />
+                        <p>Mashed potato</p>
+                        <p class="text-sm text-gray-500">
+                          180 kcal | 200g | 40g
+                        </p>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <img
+                          src="/public/image/salad.jpg"
+                          alt="Corn Salad"
+                          class="mb-2 w-full object-container"
+                          style="height: 300px"
+                        />
+                        <p>Corn salad</p>
+                        <p class="text-sm text-gray-500">63 kcal | 300g | 7g</p>
+                      </div>
+                      <div class="bg-white p-4 rounded-lg shadow">
+                        <img
+                          src="/public/image/tomato.jpg"
+                          alt="Tomato Juice"
+                          class="mb-2 w-full object-container"
+                          style="height: 300px"
+                        />
+                        <p>Tomato juice</p>
+                        <p class="text-sm text-gray-500">17 kcal | 100g | 4g</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-4">
+                  <div class="bg-white p-6 rounded-lg shadow mb-6">
+                    <img
+                      src="/public/image/lich.png"
+                      alt="Advertisement"
+                      class="w-full mb-4 object-cover"
+                    />
+                  </div>
+
+                  <div class="bg-white p-6 rounded-lg shadow mb-6">
+                    <h2 class="text-lg font-semibold mb-4">Today Report</h2>
+                    <div class="flex justify-between items-center">
+                      <p>Breakfast</p>
+                      <p class="text-gray-500">280 kcal</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                      <p>Lunch</p>
+                      <p class="text-gray-500">390 kcal</p>
+                    </div>
+                    <div class="flex justify-between items-center mt-2">
+                      <p>Dinner</p>
+                      <p class="text-gray-500">420 kcal</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+
+  </body>
+</html>
